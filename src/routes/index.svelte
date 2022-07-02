@@ -1,6 +1,6 @@
 <script lang="ts">
     import { currentUser } from '$stores/user';
-    import { auth, googleProvider } from '../firebase';
+    import { auth, googleProvider } from '$src/firebase';
     import Button from '$lib/components/Button.svelte';
 
     const appName = 'Svelte Chat';

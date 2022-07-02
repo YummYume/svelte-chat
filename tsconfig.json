@@ -10,8 +10,10 @@
         "sourceMap": true,
         "strict": true,
         "paths": {
+            "$lib": ["src/lib"],
             "$lib/*": ["src/lib/*"],
-            "$stores/*": ["src/stores/*"]
+            "$stores/*": ["src/stores/*"],
+            "$src/*": ["src/*"]
         }
     }
 }

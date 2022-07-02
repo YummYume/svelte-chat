@@ -20,7 +20,14 @@ const config = {
             },
             resolve: {
                 alias: {
-                    $stores: path.resolve('src/stores')
+                    $stores: path.resolve('src/stores'),
+                    $src: path.resolve('src')
+                }
+            },
+            build: {
+                commonjsOptions: {
+                    transformMixedEsModules: true,
+                    exclude: ['node_modules/lodash-es/**', 'node_modules/@types/lodash-es/**']
                 }
             }
         }
